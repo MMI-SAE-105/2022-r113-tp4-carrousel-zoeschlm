@@ -1,28 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/src/style.css">
+    <title>Carrousel</title>
     <script src="//unpkg.com/alpinejs" defer></script>
+
+    <link rel="stylesheet" href="style.css">
 </head>
-<style>
 
-
-
-    .carrousel {
-        overflow-x: scroll;
-    }
- 
-</style>
 <body>
-
     <div class="carrousel" x-data="{}">
-        <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"><</button><button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">></button>
-        <div class="carrousel_parent-ecrans">
-            <div id="ecran-1" class="carrousel_ecran">
+        <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant">&lt;</button><button
+            class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">></button>
+        <div class="carrousel_parent-ecrans" x-ref="parent">
+<div id="ecran-1" class="carrousel_ecran">
                 <figure>
                     <img src="https://picsum.photos/seed/1/500/300" alt="image ecran 1">
                     <figcaption>Ecran 1</figcaption>
@@ -40,7 +34,7 @@
                     <figcaption>Ecran 3</figcaption>
                 </figure>
             </div>
-            <div id="ecran-4" class="carrousel_ecran">
+<div id="ecran-4" class="carrousel_ecran">
                 <figure>
                     <img src="https://picsum.photos/seed/4/500/300" alt="image ecran 4">
                     <figcaption>Ecran 4</figcaption>
@@ -61,6 +55,6 @@
             <li><a href="#ecran-5" class="caroussel_lien">ecran 5</a></li>
         </ul>
     </div>
-    
+
 </body>
 </html>
