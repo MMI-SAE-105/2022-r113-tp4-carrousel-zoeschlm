@@ -1,0 +1,28 @@
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.carrousel_parent-ecrans {
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+
+}
+
+.carrousel_ecran {
+    width: 100%;
+    flex: none;
+    scroll-snap-align: start;/ aligne les enfants par blocs /
+}
+
+.carrousel_ecran figure {
+    margin: 0;
+
+}
+
